@@ -56,7 +56,7 @@ UserRouter.post("/api/login", async (req, res) => {
         });
         console.log(token, user);
         console.log(`user registerd`);
-        res.status(201).send(user);
+        res.status(201).send(token);
        
       } else {
         console.log(err.message);
